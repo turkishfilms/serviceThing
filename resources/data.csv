@@ -1,2 +1,2 @@
-id,name,territory_number,checkout_date,return_by_date,return_date
-0,BLdrio,12,12/12/2012,11/11/2011,11/10/2011
+id,name,territory_number,checkout_date,return_by_date,return_date,completed
+0,BLdrio,12,12/12/2012,11/11/2011,11/10/2011,0
