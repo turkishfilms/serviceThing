@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
-    <script src="/templates/index.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </head>
+
 <body>
-    <div style="background-color: cadetblue;"></div>
+    <script>
+    const e = {
+            "id": 20,
+            "name": 20,
+            "territory_number": 20,
+            "checkout_date": 20,
+            "return_by_date": 20,
+            "return_date": 20,
+            "completed": 21
+        }
+        </script>
+
+
+    <div class="topbar"> You Really thought
+        <title class="main">SERVICETHING</title>
+    </div>
+    <div class="late">
+        <ul class="late-list">LATER THAN YOU</ul>
+    </div>
+    <div class="add-area"> <p>somethin</p> 
+        <div class="add" onclick="addEntry(e)"><form></form><h>No Plaeas</h></div>
+    </div>
+    <div class="full-list"><p>else bruh</p>
+        <ul class="entries-area">
+            
+        </ul>
+    </div>
 </body>
+
 </html>
