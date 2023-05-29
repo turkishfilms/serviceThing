@@ -1,1 +1,45 @@
-"ID,Day,Meal:,Protein: ,Bread: ,Fruit: ,Vegetable:,,,,,\r\n,Monday,Breakfast,,Toast (French),Bananas,,,,,,\r\n,Monday,Lunch,Cheese,Tortilla,Oranges,Carrots,,,,,\r\n,Monday,PM Snack,Peanut Butter,Bread WG (Slice),Apples,Broccoli,,,,,\r\n,Tuesday,Breakfast,,Cereal (Life),Strawberries,,,,,,\r\n,Tuesday,Lunch,Chicken,Crackers,Kiwi,Peas,,,,,\r\n,Tuesday,PM Snack,Cheese,Bread WG (Slice),Oranges,Mixed Vegetables,,,,,\r\n,Wednesday,Breakfast,Sausage,Toast (French),Bananas,,,,,,\r\n,Wednesday,Lunch,Cheese,Pizza Crust,Oranges,Carrots,,,,,\r\n,Wednesday,PM Snack,Peanut Butter,Bread WG (Slice),Apples,Broccoli,,,,,\r\n,Thursday,Breakfast,,Cereal (Life),Strawberries,,,,,,\r\n,Thursday,Lunch,Chicken,Crackers,Kiwi,Peas,,,,,\r\n,Thursday,PM Snack,Cheese,Bread WG (Slice),Oranges,Mixed Vegetables,,,,,\r\n,Friday,Breakfast,Eggs,Pancakes (WG),Bananas,,,,,,\r\n,Friday,Lunch,String Cheese,Noodles,Mixed Fruit,Potatoes,,,,,\r\n,Friday,PM Snack,Cheese,Bread (Slice),Rasberries,Carrots,,,,,\r\n,,,,,,,Prep,Meals a week,,What we have,Amount\r\n,,,,,,,French Toast,30,,Macaroni,50\r\n,,,,,,,PBJ,30,,Chili,\r\n,,,,,,,Grilled Cheese,30,,Waffles,\r\n,,,,,,,String Cheese,15,,Pasta,\r\n,,,,,,,Noodles,15,,Carrots,7\r\n,,,,,,,Cereal (Life),30,,Mixed Vegetables,20\r\n,,,,,,,,,,,\r\n,,,,,,,Bananas ,45,,,\r\n,,,,,,,Oranges,45,,,\r\n,,,,,,,Apples,30,,,\r\n,,,,,,,Strawberries,30,,,\r\n,,,,,,,Kiwi,30,,,\r\n,,,,,,,Mixed Fruit,15,,,\r\n,,,,,,,Raspberries,15,,,\r\n,,,,,,,,,,,\r\n,,,,,,,Peas,30,,,\r\n,,,,,,,Mixed Vegetables,30,,,\r\n,,,,,,,Carrots,45,,,\r\n,,,,,,,Broccoli,30,,,\r\n,,,,,,,Potatoes,15,,,\r\n,,,,,,,,,,,\r\n,,,,,,,Pizza ,15,,,"
+ID,Day,Meal,Protein,Bread,Fruit,Vegetable
+,Monday,Breakfast,,Toast (French),Bananas,,
+,Monday,Lunch,Cheese,Tortilla,Oranges,Carrots,
+,Monday,PM Snack,Peanut Butter,Bread WG (Slice),Apples,Broccoli,
+,Tuesday,Breakfast,,Cereal (Life),Strawberries,,
+,Tuesday,Lunch,Chicken,Crackers,Kiwi,Peas,
+,Tuesday,PM Snack,Cheese,Bread WG (Slice),Oranges,Mixed Vegetables,
+,Wednesday,Breakfast,Sausage,Toast (French),Bananas,,
+,Wednesday,Lunch,Cheese,Pizza Crust,Oranges,Carrots,
+,Wednesday,PM Snack,Peanut Butter,Bread WG (Slice),Apples,Broccoli,
+,Thursday,Breakfast,,Cereal (Life),Strawberries,,
+,Thursday,Lunch,Chicken,Crackers,Kiwi,Peas,
+,Thursday,PM Snack,Cheese,Bread WG (Slice),Oranges,Mixed Vegetables,
+,Friday,Breakfast,Eggs,Pancakes (WG),Bananas,,
+,Friday,Lunch,String Cheese,Noodles,Mixed Fruit,Potatoes,
+,Friday,PM Snack,Cheese,Bread (Slice),Rasberries,Carrots,
+
+
+Prep,
+Meals a week,What we have, Amount 
+French Toast,30
+Macaroni,50 
+PBJ,30
+Chili, 
+Grilled Cheese,30
+Waffles, 
+String Cheese,15
+Pasta, 
+Noodles,15
+Carrots,7 
+Cereal (Life),30
+Mixed Vegetables,20 
+Bananas ,45, 
+Oranges,45, 
+Apples,30, 
+Strawberries,30, 
+Kiwi,30, 
+Mixed Fruit,15, 
+Raspberries,15, 
+Peas,30, 
+Mixed Vegetables,30, 
+Carrots,45, 
+Broccoli,30, 
+Potatoes,15, 
+Pizza ,15,
