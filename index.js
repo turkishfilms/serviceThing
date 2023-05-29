@@ -15,7 +15,7 @@ const { authenticate } = require('@google-cloud/local-auth');
 const { google } = require('googleapis');
 
 // If modifying these scopes, delete token.json.
-const SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly'];
+const SCOPES = ['https://www.googleapis.com/auth/drive.readonly'];
 // The file token.json stores the user's access and refresh tokens, and is
 // created automatically when the authorization flow completes for the first
 // time.
@@ -82,8 +82,9 @@ async function authorize() {
 async function listFiles(authClient) {
     const drive = google.drive({ version: 'v3', auth: authClient });
     const res = await drive.files.list({
-        pageSize: 10,
         fields: 'nextPageToken, files(id, name)',
+        supportsAllDrives: true,
+        includeItemsFromAllDrives: true,
     });
     const files = res.data.files;
     if (files.length === 0) {
@@ -97,4 +98,43 @@ async function listFiles(authClient) {
     });
 }
 
-authorize().then(listFiles).catch(console.error);
+/**
+ * Lists the names of shared drives.
+ * @param {OAuth2Client} authClient An authorized OAuth2 client.
+ */
+async function listDrives(authClient) {
+    const drive = google.drive({ version: 'v3', auth: authClient });
+    const res = await drive.drives.list();
+    const drives = res.data.drives;
+    console.log(res)
+    fs.appendFile('response.json',JSON.stringify(res))
+    if (drives.length === 0) {
+        console.log('No drives found.');
+        return;
+    }
+
+    console.log('drives:');
+    drives.map((drive) => {
+        console.log(`${drive.name} (${drive.id})`);
+    });
+}
+
+/**
+ * Lists the names of shared drives.
+ * @param {OAuth2Client} authClient An authorized OAuth2 client.
+ */
+async function fileToCSV(authClient) {
+    const drive = google.drive({ version: 'v3', auth: authClient });
+    const res = await drive.files.export({
+        fileId:"1BVYz9OdXlJA3ZsXegsBp8CbEi7ftRoF6LmBnRt0EKCE",
+        mimeType: "text/csv"
+    });
+    const csv = res.data;
+    console.log(res)
+    fs.appendFile('daycare.csv',JSON.stringify(csv))
+
+    console.log('drives:', csv);
+  
+}
+
+authorize().then(fileToCSV).catch(console.error);
